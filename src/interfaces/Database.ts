@@ -1,4 +1,4 @@
-export default abstract class IDatabase {
+export default abstract class Database {
 
   constructor(protected driver: any, protected config: Object) {}
 

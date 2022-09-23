@@ -1,15 +1,14 @@
 import { Express } from 'express';
 
+import IRepository from '@interfaces/Repository'
 import db from '@loaders/database' 
 
-export default class UserRepository {
-
-  constructor() {}
+class UserRepository extends IRepository {
 
   findByEmail(email: string) {}
 
-  // teste(msg) {
-  //   console.log
-  // }
+  save() {}
 
 }
+
+export default new UserRepository(db);

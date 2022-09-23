@@ -1,10 +1,10 @@
 import knex, { Knex } from 'knex';
-import IDatabase from '@interfaces/Database'
+import Database from '@interfaces/Database'
 import { databaseConfig } from '@config/config'
 
 const { client, database, user, password } = databaseConfig;
 
-class Postgres extends IDatabase {
+class Postgres extends Database {
 
   connect(): Knex | undefined {
 
